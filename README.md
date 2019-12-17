@@ -1,7 +1,10 @@
 # Spanish Medical Terms - Spaced repetition API!
 
-* Link to live app:
-* Link to client repo: https://github.com/thinkful-ei-gecko/Badri-Hubert-Lauara-client
+* Link to live app: https://hubert-spanishmedterms.now.sh/
+* Link to live server: https://stormy-wildwood-24680.herokuapp.com/api
+
+* Link to client repo: https://github.com/flashcabaja64/Spanish-Med-Terms-Capstone2-Client
+* Link to API repo: https://github.com/flashcabaja64/Spanish-Med-Terms-Capstone2-Server
 
 ## Teammates: Badri, Hubert, Laura
 
