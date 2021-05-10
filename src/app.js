@@ -9,10 +9,13 @@ const languageRouter = require('./language/language-router');
 const userRouter = require('./user/user-router');
 
 const app = express();
-
+const corsOptions = {
+  origin: '*',
+  optionsSuccessStatus: 200 
+}
 app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
   skip: () => NODE_ENV === 'test' }));
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(helmet());
 
 app.use('/api/auth', authRouter);
