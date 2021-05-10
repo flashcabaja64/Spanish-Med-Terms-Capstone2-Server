@@ -17,7 +17,7 @@ app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
   skip: () => NODE_ENV === 'test' }));
 //app.use(cors(corsOptions));
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://hubert-spanishmedterms.vercel.app/");
+  res.setHeader("Access-Control-Allow-Origin", "https://hubert-spanishmedterms.vercel.app/api");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
