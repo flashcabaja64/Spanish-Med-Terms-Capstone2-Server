@@ -6,7 +6,10 @@ const userRouter = express.Router();
 const jsonBodyParser = express.json();
 
 userRouter
+  .get('/', jsonBodyParser, async (req, res, next) => { res.send('get success') })
   .post('/', jsonBodyParser, async (req, res, next) => {
+    res.header('Access-Control-Allow-Origin', "*");
+    res.header('Access-Control-Allow-Headers', "*");
     const { password, username, name } = req.body;
 
     for (const field of ['name', 'username', 'password'])
