@@ -5,8 +5,9 @@ const UserService = require('./user-service');
 const userRouter = express.Router();
 const jsonBodyParser = express.json();
 
+userRouter.get('/', jsonBodyParser, async (req, res, next) => { res.send('get success') })
+
 userRouter
-  .get('/', jsonBodyParser, async (req, res, next) => { res.send('get success') })
   .post('/', jsonBodyParser, async (req, res, next) => {
     const { password, username, name } = req.body;
 
