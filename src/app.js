@@ -23,6 +23,8 @@ app.use('/api/auth', authRouter);
 app.use('/api/language', languageRouter);
 app.use('/api/user', userRouter);
 
+app.use(errorHandler);
+/*
 app.use(function errorHandler(error, req, res, next) {
   let response;
   if (NODE_ENV === 'production') {
@@ -33,5 +35,5 @@ app.use(function errorHandler(error, req, res, next) {
   }
   res.status(500).json(response);
 });
-
+*/
 module.exports = app;
